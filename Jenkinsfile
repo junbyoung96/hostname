@@ -28,7 +28,7 @@ pipeline {
     }
     stages {
         stage('git scm update') {
-            steps 
+            steps {
                 sh "git clone https://github.com/junbyoung96/hostname.git"
             }
         }
