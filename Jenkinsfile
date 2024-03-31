@@ -28,8 +28,8 @@ pipeline {
     }
     stages {
         stage('git scm update') {
-            steps {
-                sh "git clone https://github.com/junbyoung96/hostname.git ."
+            steps 
+                sh "git clone https://github.com/junbyoung96/hostname.git"
             }
         }
         stage('docker build && push') {
